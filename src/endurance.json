@@ -1,0 +1,899 @@
+{
+  "_meta": {
+    "sources": [
+      "Cardio Made Simple — Dr. Mike Israetel & Max Weisenthal (RP, 2023)",
+      "The Naked Warrior — Pavel Tsatsouline (Dragon Door, 2004)"
+    ],
+    "structure": "level → duration_min → { meta, variants: [A, B, C] }",
+    "levels": ["beginner", "intermediate", "expert"],
+    "durations_min": [30, 60, 90],
+    "total_combinations": 9,
+    "variants_per_combination": 3,
+    "key_concepts": {
+      "SFTR": "Stimulus to Fatigue and Time Ratio — the primary metric for evaluating cardio efficiency. Maximize calorie burn while minimizing fatigue and session duration.",
+      "intensity_zones": {
+        "Zone_1_recovery": "<110 bpm — too low for meaningful cardiovascular stimulus; acceptable only for active rest",
+        "Zone_2_optimal": "110–150 bpm — RP's recommended sweet spot; all health benefits, minimal fatigue accumulation",
+        "Zone_3_hard": "150–170 bpm — acceptable 1–3x/week; significantly higher fatigue cost",
+        "Zone_4_max": ">170 bpm — reserved for brief HIIT intervals only; high joint and systemic fatigue"
+      },
+      "GTG_conditioning": "Grease the Groove principle (Naked Warrior): practice movement patterns frequently at sub-maximal intensity (≤50% of max effort), never to failure. Applied to bodyweight conditioning circuits this means: short sets, high frequency, full neural freshness every set.",
+      "optimal_modalities": ["Elliptical (120–140 bpm)", "Incline treadmill walk (3+ mph, 5–10% grade)", "Step tracking (10,000–14,000/day)", "Outdoor brisk walk", "Rowing machine", "Bodyweight conditioning circuits"],
+      "suboptimal_modalities": ["Reclined stationary bike", "Slow flat treadmill walking (holding rails)", "Swimming (unless proficient)", "High-impact HIIT every session"],
+      "progression_system": {
+        "beginner": "Increase duration before intensity. Build to consistent 10,000 daily steps. Add dedicated sessions when steps average below 10,000.",
+        "intermediate": "Autoregulated intensity by feel and bpm. Add 1–2 HIIT sessions per week maximum. Increase step goal toward 12,000–14,000 during fat loss phases.",
+        "expert": "Periodize cardio by phase: more during fat loss (up to 14,000 steps + dedicated sessions), maintenance during muscle gain. Use hungry/tired decision framework to adjust cardio vs. food deficit split."
+      },
+      "bpm_guidance": "Stay 110–150 bpm for most sessions. Hard sessions (>150) require 2–3 easier days to recover. Monitor joint health — back off intensity at first sign of knee/ankle discomfort.",
+      "fat_loss_formula": "cardio_deficit_cals = total_daily_deficit × 0.5. Food reduction covers the other 50%.",
+      "maintenance_formula": "session_calorie_target = 2.5 × bodyweight_lbs. Perform 5x/week if steps average <3,000/day."
+    }
+  },
+
+  "beginner": {
+    "30": {
+      "meta": {
+        "level": "Beginner",
+        "duration_min": 30,
+        "target_bpm": "110–135",
+        "sftr_rating": "High — low fatigue, moderate calorie burn, zero setup cost if walking",
+        "weekly_frequency": "3–5 sessions",
+        "step_integration": "Count session toward daily step goal. Target 10,000 steps/day total.",
+        "progression": "Add 2–3 min per session each week until you reach 45–60 min comfortably.",
+        "notes": "Beginners should prioritize consistency over intensity."
+      },
+      "variants": [
+        {
+          "id": "bgn_cardio_30_A",
+          "variant": "A",
+          "title": "Incline Brisk Walk",
+          "modality": "Treadmill or outdoor walking",
+          "session_type": "LISS (Low-Intensity Steady State)",
+          "target_bpm": "110–130",
+          "target_rpe": "3–4 / 10",
+          "structure": [
+            {
+              "phase": "Warm-up",
+              "duration_min": 3,
+              "description": "Flat treadmill walk at 2.5 mph. No incline. Let heart rate rise naturally.",
+              "bpm_target": "<110"
+            },
+            {
+              "phase": "Main Work",
+              "duration_min": 25,
+              "description": "Incline treadmill at 5–8% grade, 3.0–3.5 mph. Do NOT hold the rails. Arms swing naturally.",
+              "bpm_target": "110–130"
+            },
+            {
+              "phase": "Cool-down",
+              "duration_min": 2,
+              "description": "Slow flat walk. Let heart rate drop below 100 bpm before stopping.",
+              "bpm_target": "<100"
+            }
+          ]
+        },
+        {
+          "id": "bgn_cardio_30_B",
+          "variant": "B",
+          "title": "Elliptical Steady State",
+          "modality": "Elliptical machine",
+          "session_type": "LISS",
+          "target_bpm": "120–140",
+          "target_rpe": "4–5 / 10",
+          "structure": [
+            {
+              "phase": "Warm-up",
+              "duration_min": 3,
+              "description": "Low resistance, slow cadence on the elliptical. Let joints warm up.",
+              "bpm_target": "<115"
+            },
+            {
+              "phase": "Main Work",
+              "duration_min": 25,
+              "description": "Maintain a steady pace with resistance set so that heart rate sits at 120–140 bpm. Use the arm poles.",
+              "bpm_target": "120–140"
+            },
+            {
+              "phase": "Cool-down",
+              "duration_min": 2,
+              "description": "Drop resistance to minimum. Slow cadence until heart rate is below 100.",
+              "bpm_target": "<100"
+            }
+          ]
+        },
+        {
+          "id": "bgn_cardio_30_C",
+          "variant": "C",
+          "title": "Walk + GTG Bodyweight Activation",
+          "modality": "Outdoor walk with bodyweight movement breaks",
+          "session_type": "LISS + movement practice",
+          "target_bpm": "110–130",
+          "target_rpe": "3–4 / 10",
+          "structure": [
+            {
+              "phase": "Walk Block 1",
+              "duration_min": 8,
+              "description": "Brisk outdoor walk at a pace that raises your heart rate to 110–120 bpm.",
+              "bpm_target": "110–120"
+            },
+            {
+              "phase": "GTG Movement Break 1",
+              "duration_min": 2,
+              "description": "Stop walking. Perform 3–5 bodyweight squats. Rest 30 sec. Do 3–5 wall-supported pushups.",
+              "bpm_target": "Quality focus"
+            },
+            {
+              "phase": "Walk Block 2",
+              "duration_min": 8,
+              "description": "Resume brisk walk. Heart rate will drop slightly then return.",
+              "bpm_target": "110–125"
+            },
+            {
+              "phase": "GTG Movement Break 2",
+              "duration_min": 2,
+              "description": "3–5 assisted single-leg squat touch-downs. 3–5 standard pushups.",
+              "bpm_target": "Quality focus"
+            },
+            {
+              "phase": "Cool-down",
+              "duration_min": 10,
+              "description": "Final brisk walk, gradually slowing.",
+              "bpm_target": "<100"
+            }
+          ]
+        }
+      ]
+    },
+    "60": {
+      "meta": {
+        "level": "Beginner",
+        "duration_min": 60,
+        "target_bpm": "110–135",
+        "sftr_rating": "High sustained",
+        "weekly_frequency": "3–5 sessions",
+        "step_integration": "A 60-min brisk walk typically yields 6,000–8,000 steps.",
+        "progression": "Increase pace/incline rather than duration.",
+        "notes": "Sustainable, repeatable, and low joint stress."
+      },
+      "variants": [
+        {
+          "id": "bgn_cardio_60_A",
+          "variant": "A",
+          "title": "Long Incline Walk — Podcast Mode",
+          "modality": "Treadmill incline walk",
+          "session_type": "LISS",
+          "target_bpm": "110–130",
+          "target_rpe": "3–4 / 10",
+          "structure": [
+            {
+              "phase": "Warm-up",
+              "duration_min": 5,
+              "description": "Flat walk at 2.5 mph. Ease joints in.",
+              "bpm_target": "<110"
+            },
+            {
+              "phase": "Main Work",
+              "duration_min": 50,
+              "description": "Incline 6–10%, speed 3.0–3.5 mph. Arms free (no rail holding).",
+              "bpm_target": "115–130"
+            },
+            {
+              "phase": "Cool-down",
+              "duration_min": 5,
+              "description": "Drop incline to 0%, reduce speed. Walk until heart rate is under 100.",
+              "bpm_target": "<100"
+            }
+          ]
+        },
+        {
+          "id": "bgn_cardio_60_B",
+          "variant": "B",
+          "title": "Elliptical Steady State — Long",
+          "modality": "Elliptical machine",
+          "session_type": "LISS",
+          "target_bpm": "120–140",
+          "target_rpe": "4–5 / 10",
+          "structure": [
+            {
+              "phase": "Warm-up",
+              "duration_min": 5,
+              "description": "Minimum resistance. Slow cadence.",
+              "bpm_target": "<115"
+            },
+            {
+              "phase": "Main Work Block 1",
+              "duration_min": 25,
+              "description": "Steady pace at 120–135 bpm. Use arm poles actively.",
+              "bpm_target": "120–135"
+            },
+            {
+              "phase": "Main Work Block 2",
+              "duration_min": 25,
+              "description": "Increase resistance slightly (+1 level) to hold 130–140 bpm.",
+              "bpm_target": "130–140"
+            },
+            {
+              "phase": "Cool-down",
+              "duration_min": 5,
+              "description": "Minimum resistance. Slow cadence.",
+              "bpm_target": "<100"
+            }
+          ]
+        },
+        {
+          "id": "bgn_cardio_60_C",
+          "variant": "C",
+          "title": "Outdoor Walk + Step Accumulation",
+          "modality": "Outdoor walking (step-tracked)",
+          "session_type": "LISS + daily movement",
+          "target_bpm": "110–130",
+          "target_rpe": "3–4 / 10",
+          "structure": [
+            {
+              "phase": "Dedicated Walk",
+              "duration_min": 45,
+              "description": "Continuous brisk outdoor walk. pace that keeps heart rate 110–130 bpm.",
+              "bpm_target": "110–130"
+            },
+            {
+              "phase": "Step Top-Up Activities",
+              "duration_min": 15,
+              "description": "After the walk, deliberately accumulate steps: walk while on calls, chores.",
+              "bpm_target": "steps focus"
+            }
+          ]
+        }
+      ]
+    },
+    "90": {
+      "meta": {
+        "level": "Beginner",
+        "duration_min": 90,
+        "target_bpm": "110–135",
+        "sftr_rating": "High calorie burn",
+        "weekly_frequency": "2–3 sessions",
+        "step_integration": "Will likely complete daily goal in a single session.",
+        "progression": "Increase pace/incline rather than time.",
+        "notes": "Low joint stress."
+      },
+      "variants": [
+        {
+          "id": "bgn_cardio_90_A",
+          "variant": "A",
+          "title": "Long Walk — Full Step Target Session",
+          "modality": "Outdoor or treadmill walk",
+          "session_type": "LISS — extended",
+          "target_bpm": "110–130",
+          "target_rpe": "3–4 / 10",
+          "structure": [
+            {
+              "phase": "Warm-up Walk",
+              "duration_min": 5,
+              "description": "Easy pace, flat terrain.",
+              "bpm_target": "<110"
+            },
+            {
+              "phase": "Main Walk Block 1",
+              "duration_min": 40,
+              "description": "Brisk pace. 3.0–3.5 mph on treadmill at 6–8% grade.",
+              "bpm_target": "115–125"
+            },
+            {
+              "phase": "Main Walk Block 2",
+              "duration_min": 35,
+              "description": "Continue same pace.",
+              "bpm_target": "115–130"
+            },
+            {
+              "phase": "Cool-down",
+              "duration_min": 10,
+              "description": "Reduce pace progressively. Last 5 min at 2.0 mph.",
+              "bpm_target": "<100"
+            }
+          ]
+        },
+        {
+          "id": "bgn_cardio_90_B",
+          "variant": "B",
+          "title": "Mixed Modality — Elliptical + Walk",
+          "modality": "Elliptical (45 min) + Incline walk (45 min)",
+          "session_type": "LISS — modality rotation",
+          "target_bpm": "115–135",
+          "target_rpe": "4 / 10",
+          "structure": [
+            {
+              "phase": "Elliptical Warm-up",
+              "duration_min": 5,
+              "description": "Easy resistance.",
+              "bpm_target": "<115"
+            },
+            {
+              "phase": "Elliptical Main Work",
+              "duration_min": 40,
+              "description": "Steady state at 120–135 bpm. Active arm drive.",
+              "bpm_target": "120–135"
+            },
+            {
+              "phase": "Transition",
+              "duration_min": 2,
+              "description": "Step off elliptical. Move to treadmill.",
+              "bpm_target": "-"
+            },
+            {
+              "phase": "Incline Walk",
+              "duration_min": 40,
+              "description": "Treadmill 6–10% incline, 3.0–3.5 mph.",
+              "bpm_target": "115–130"
+            },
+            {
+              "phase": "Cool-down Walk",
+              "duration_min": 3,
+              "description": "Flat, slow pace.",
+              "bpm_target": "<100"
+            }
+          ]
+        },
+        {
+          "id": "bgn_cardio_90_C",
+          "variant": "C",
+          "title": "Active Day Session — Step Target + GTG Walks",
+          "modality": "Accumulated step walking + GTG bodyweight breaks",
+          "session_type": "NEAT-based LISS",
+          "target_bpm": "110–130",
+          "target_rpe": "3 / 10",
+          "structure": [
+            {
+              "phase": "Morning Walk",
+              "duration_min": 30,
+              "description": "Brisk 30-min walk first thing.",
+              "bpm_target": "110–125"
+            },
+            {
+              "phase": "GTG Break 1",
+              "duration_min": 5,
+              "description": "3–5 bodyweight squats. 3–5 wall pushups.",
+              "bpm_target": "not tracked"
+            },
+            {
+              "phase": "Midday Movement",
+              "duration_min": 20,
+              "description": "Walk during lunch break, take stairs, chores.",
+              "bpm_target": "110–120"
+            },
+            {
+              "phase": "GTG Break 2",
+              "duration_min": 5,
+              "description": "3–5 bodyweight squats. 3–5 standard or incline pushups.",
+              "bpm_target": "not tracked"
+            },
+            {
+              "phase": "Evening Walk",
+              "duration_min": 30,
+              "description": "Wind-down walk at a comfortable brisk pace.",
+              "bpm_target": "<100"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "intermediate": {
+    "30": {
+      "meta": {
+        "level": "Intermediate",
+        "duration_min": 30,
+        "target_bpm": "120–150"
+      },
+      "variants": [
+        {
+          "id": "int_cardio_30_A",
+          "variant": "A",
+          "title": "HIIT — Treadmill Intervals",
+          "modality": "Treadmill",
+          "session_type": "HIIT",
+          "target_bpm": "120–165",
+          "target_rpe": "Rest: 4/10 · Work: 7–8/10",
+          "structure": [
+            {
+              "phase": "Warm-up",
+              "duration_min": 5,
+              "description": "Flat walk. Build to light jog.",
+              "bpm_target": "<120"
+            },
+            {
+              "phase": "HIIT Rounds",
+              "duration_min": 20,
+              "description": "8 rounds: 1 min hard (high speed) / 2 min easy (walk).",
+              "bpm_target": "150–165 / 120–130"
+            },
+            {
+              "phase": "Cool-down",
+              "duration_min": 5,
+              "description": "Walk at 2.5 mph flat.",
+              "bpm_target": "<110"
+            }
+          ]
+        },
+        {
+          "id": "int_cardio_30_B",
+          "variant": "B",
+          "title": "Tempo Elliptical — Zone 2 Push",
+          "modality": "Elliptical machine",
+          "session_type": "Tempo LISS",
+          "target_bpm": "135–148",
+          "target_rpe": "5–6 / 10",
+          "structure": [
+            {
+              "phase": "Warm-up",
+              "duration_min": 4,
+              "description": "Light resistance. Build to 120 bpm.",
+              "bpm_target": "<120"
+            },
+            {
+              "phase": "Tempo Work",
+              "duration_min": 24,
+              "description": "Maintain 135–148 bpm continuously for the full 24 minutes.",
+              "bpm_target": "135–148"
+            },
+            {
+              "phase": "Cool-down",
+              "duration_min": 2,
+              "description": "Drop resistance to minimum. Easy spin.",
+              "bpm_target": "<100"
+            }
+          ]
+        },
+        {
+          "id": "int_cardio_30_C",
+          "variant": "C",
+          "title": "GTG Bodyweight Conditioning",
+          "modality": "Bodyweight",
+          "session_type": "Density circuit",
+          "target_bpm": "120–145",
+          "target_rpe": "5 / 10",
+          "structure": [
+            {
+              "phase": "Warm-up",
+              "duration_min": 4,
+              "description": "Arm circles, hip circles, squats, pushups.",
+              "bpm_target": "<120"
+            },
+            {
+              "phase": "GTG Circuit",
+              "duration_min": 20,
+              "description": "5 rounds: Pistol progression × 3–5, OAPU progression × 3–5, Dead Hang × 30s.",
+              "bpm_target": "120–145"
+            },
+            {
+              "phase": "Cool-down",
+              "duration_min": 6,
+              "description": "Light walk, static stretching.",
+              "bpm_target": "<100"
+            }
+          ]
+        }
+      ]
+    },
+    "60": {
+      "meta": {
+        "level": "Intermediate",
+        "duration_min": 60,
+        "target_bpm": "120–150"
+      },
+      "variants": [
+        {
+          "id": "int_cardio_60_A",
+          "variant": "A",
+          "title": "Moderate LISS — Elliptical Long",
+          "modality": "Elliptical machine",
+          "session_type": "LISS",
+          "target_bpm": "130–145",
+          "target_rpe": "5 / 10",
+          "structure": [
+            {
+              "phase": "Warm-up",
+              "duration_min": 5,
+              "description": "Easy cadence.",
+              "bpm_target": "<125"
+            },
+            {
+              "phase": "Main Work",
+              "duration_min": 50,
+              "description": "Set resistance so heart rate stabilizes at 130–145 bpm.",
+              "bpm_target": "130–145"
+            },
+            {
+              "phase": "Cool-down",
+              "duration_min": 5,
+              "description": "Drop resistance fully.",
+              "bpm_target": "<100"
+            }
+          ]
+        },
+        {
+          "id": "int_cardio_60_B",
+          "variant": "B",
+          "title": "Pyramid Interval Session",
+          "modality": "Treadmill or elliptical",
+          "session_type": "Progressive interval",
+          "target_bpm": "120–165",
+          "target_rpe": "Ascend: 4→8/10 · Descend: 8→4/10",
+          "structure": [
+            {
+              "phase": "Warm-up",
+              "duration_min": 7,
+              "description": "Easy pace building.",
+              "bpm_target": "110–125"
+            },
+            {
+              "phase": "Pyramid Build",
+              "duration_min": 18,
+              "description": "3 x 6 min levels: 130-140, 140-150, 150-165.",
+              "bpm_target": "up to 165"
+            },
+            {
+              "phase": "Peak Recovery",
+              "duration_min": 3,
+              "description": "Easy walk.",
+              "bpm_target": "<130"
+            },
+            {
+              "phase": "Pyramid Descend",
+              "duration_min": 18,
+              "description": "3 x 6 min levels back down.",
+              "bpm_target": "down to 130"
+            },
+            {
+              "phase": "Cool-down",
+              "duration_min": 14,
+              "description": "Easy walk.",
+              "bpm_target": "<100"
+            }
+          ]
+        },
+        {
+          "id": "int_cardio_60_C",
+          "variant": "C",
+          "title": "Split: 30 HIIT + 30 LISS",
+          "modality": "Treadmill (HIIT) + Elliptical (LISS)",
+          "session_type": "Mixed",
+          "target_bpm": "HIIT: 150–165 · LISS: 110–130",
+          "target_rpe": "HIIT: 7–8/10 · LISS: 3/10",
+          "structure": [
+            {
+              "phase": "Warm-up",
+              "duration_min": 5,
+              "description": "Easy jog.",
+              "bpm_target": "<125"
+            },
+            {
+              "phase": "HIIT Block",
+              "duration_min": 18,
+              "description": "6 rounds: 1 min hard / 2 min easy.",
+              "bpm_target": "155–165 / 125–130"
+            },
+            {
+              "phase": "Transition",
+              "duration_min": 2,
+              "description": "Move to Elliptical.",
+              "bpm_target": "-"
+            },
+            {
+              "phase": "LISS Recovery",
+              "duration_min": 30,
+              "description": "Elliptical or walk at 110–130 bpm.",
+              "bpm_target": "110–130"
+            },
+            {
+              "phase": "Cool-down",
+              "duration_min": 5,
+              "description": "Full descent.",
+              "bpm_target": "<100"
+            }
+          ]
+        }
+      ]
+    },
+    "90": {
+      "meta": {
+        "level": "Intermediate",
+        "duration_min": 90,
+        "target_bpm": "120–150"
+      },
+      "variants": [
+        {
+          "id": "int_cardio_90_A",
+          "variant": "A",
+          "title": "Long Fartlek Walk",
+          "modality": "Outdoor walk or treadmill",
+          "session_type": "Fartlek",
+          "target_bpm": "115–150",
+          "target_rpe": "4–7/10",
+          "structure": [
+            {
+              "phase": "Warm-up",
+              "duration_min": 8,
+              "description": "Easy walk.",
+              "bpm_target": "<115"
+            },
+            {
+              "phase": "Fartlek Block",
+              "duration_min": 72,
+              "description": "Walk/jog/run freely between 110 and 150 bpm.",
+              "bpm_target": "110–150"
+            },
+            {
+              "phase": "Cool-down",
+              "duration_min": 10,
+              "description": "Easy walk. Full descent.",
+              "bpm_target": "<100"
+            }
+          ]
+        },
+        {
+          "id": "int_cardio_90_B",
+          "variant": "B",
+          "title": "Sustained Zone 2 Block",
+          "modality": "Elliptical or rowing machine",
+          "session_type": "Extended LISS",
+          "target_bpm": "125–145",
+          "target_rpe": "4–5 / 10",
+          "structure": [
+            {
+              "phase": "Warm-up",
+              "duration_min": 8,
+              "description": "Low resistanceRow.",
+              "bpm_target": "<120"
+            },
+            {
+              "phase": "Zone 2 segments",
+              "duration_min": 72,
+              "description": "4 x 18 min segments building 125-145 bpm.",
+              "bpm_target": "125–145"
+            },
+            {
+              "phase": "Cool-down",
+              "duration_min": 10,
+              "description": "Easy spin.",
+              "bpm_target": "<100"
+            }
+          ]
+        },
+        {
+          "id": "int_cardio_90_C",
+          "variant": "C",
+          "title": "Step + GTG Active Day",
+          "modality": "Walking (accumulated) + GTG breaks",
+          "session_type": "NEAT + skill practice",
+          "target_bpm": "110–135 during walks",
+          "target_rpe": "3–4 / 10",
+          "structure": [
+            {
+              "phase": "Morning Walk",
+              "duration_min": 30,
+              "description": "Brisk 30-min morning walk.",
+              "bpm_target": "115–130"
+            },
+            {
+              "phase": "GTG Session 1",
+              "duration_min": 10,
+              "description": "5 rounds: Pistol progression, OAPU progression.",
+              "bpm_target": "not tracked"
+            },
+            {
+              "phase": "Midday Activity",
+              "duration_min": 20,
+              "description": "Daily steps.",
+              "bpm_target": "110–125"
+            },
+            {
+              "phase": "GTG Session 2",
+              "duration_min": 10,
+              "description": "5 rounds of same variations.",
+              "bpm_target": "not tracked"
+            },
+            {
+              "phase": "Evening Walk",
+              "duration_min": 20,
+              "description": "Easy wind-down.",
+              "bpm_target": "110–125"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "expert": {
+    "30": {
+      "meta": {
+        "level": "Expert",
+        "duration_min": 30,
+        "target_bpm": "130–165"
+      },
+      "variants": [
+        {
+          "id": "exp_cardio_30_A",
+          "variant": "A",
+          "title": "HIIT — Hard Intervals (Low-Impact)",
+          "modality": "Elliptical or bike",
+          "session_type": "HIIT",
+          "target_bpm": "150–170 work / 120-130 recovery",
+          "target_rpe": "Work: 8–9/10 · Recovery: 4/10",
+          "structure": [
+            {
+              "phase": "Warm-up",
+              "duration_min": 4,
+              "description": "Steady build.",
+              "bpm_target": "<130"
+            },
+            {
+              "phase": "HIIT Block",
+              "duration_min": 18,
+              "description": "6 rounds: 40 sec max effort / 80 sec complete rest.",
+              "bpm_target": "up to 170"
+            },
+            {
+              "phase": "Active finish",
+              "duration_min": 5,
+              "description": "Easy pace.",
+              "bpm_target": "<120"
+            },
+            {
+              "phase": "Cool-down",
+              "duration_min": 3,
+              "description": "Full stop.",
+              "bpm_target": "<100"
+            }
+          ]
+        },
+        {
+           "id": "exp_cardio_30_B",
+          "variant": "B",
+          "title": "High-Tempo Sustained",
+          "modality": "Elliptical or rowing machine",
+          "session_type": "High Tempo LISS",
+          "target_bpm": "142–150",
+          "target_rpe": "6–7 / 10",
+          "structure": [
+            {
+              "phase": "Warm-up",
+              "duration_min": 4,
+              "description": "Build to 135 bpm.",
+              "bpm_target": "110→135"
+            },
+            {
+              "phase": "Tempo Work",
+              "duration_min": 24,
+              "description": "Maintain 142–150 bpm continuously for the full 24 minutes.",
+              "bpm_target": "142–150"
+            },
+            {
+              "phase": "Cool-down",
+              "duration_min": 2,
+              "description": "Drop resistance.",
+              "bpm_target": "<105"
+            }
+          ]
+        },
+        {
+           "id": "exp_cardio_30_C",
+          "variant": "C",
+          "title": "GTG Max-Tension Conditioning",
+          "modality": "Bodyweight",
+          "session_type": "Density circuit",
+          "target_bpm": "130–155",
+          "target_rpe": "5–6 / 10",
+          "structure": [
+            {
+              "phase": "Warm-up",
+              "duration_min": 3,
+              "description": "Tension activation sequence.",
+              "bpm_target": "<120"
+            },
+            {
+              "phase": "GTG Expert Circuit",
+              "duration_min": 20,
+              "description": "5 rounds: Full Pistol × 5, OAPU × 5, Dead Hang × 45s.",
+              "bpm_target": "130–155"
+            },
+            {
+              "phase": "Cool-down",
+              "duration_min": 7,
+              "description": "Wind-down.",
+              "bpm_target": "<100"
+            }
+          ]
+        }
+      ]
+    },
+    "60": {
+      "meta": {
+        "level": "Expert",
+        "duration_min": 60,
+        "target_bpm": "125–155"
+      },
+      "variants": [
+        {
+           "id": "exp_cardio_60_A",
+          "variant": "A",
+          "title": "Periodized Hard/Easy Split",
+          "modality": "Elliptical + Incline walk",
+          "session_type": "Mixed intensity",
+          "target_bpm": "Hard: 145–160 · Easy: 110–130",
+          "target_rpe": "Hard: 6–7/10 · Easy: 3/10",
+          "structure": [
+            {
+              "phase": "Warm-up",
+              "duration_min": 5,
+              "description": "Easy build.",
+              "bpm_target": "<130"
+            },
+            {
+              "phase": "Hard Block",
+              "duration_min": 28,
+              "description": "Elliptical: 145–158 bpm.",
+              "bpm_target": "145–158"
+            },
+            {
+              "phase": "Transition",
+              "duration_min": 2,
+              "description": "Move to treadmill.",
+              "bpm_target": "-"
+            },
+            {
+              "phase": "Recovery Block",
+              "duration_min": 20,
+              "description": "Incline walk: 110–130 bpm.",
+              "bpm_target": "110–130"
+            },
+            {
+              "phase": "Cool-down",
+              "duration_min": 5,
+              "description": "Full stop.",
+              "bpm_target": "<100"
+            }
+          ]
+        }
+      ]
+    },
+    "90": {
+      "meta": {
+        "level": "Expert",
+        "duration_min": 90,
+        "target_bpm": "125–155"
+      },
+      "variants": [
+        {
+          "id": "exp_cardio_90_B",
+          "variant": "B",
+          "title": "Long Zone 2 Endurance",
+          "modality": "Rowing machine or elliptical",
+          "session_type": "Extended LISS",
+          "target_bpm": "125–145",
+          "target_rpe": "4–5 / 10",
+          "structure": [
+            {
+              "phase": "Warm-up",
+              "duration_min": 8,
+              "description": "Easy cadence.",
+              "bpm_target": "<120"
+            },
+            {
+              "phase": "Zone 2 Block",
+              "duration_min": 80,
+              "description": "4 x 20 min segments: building fat oxidation efficiency.",
+              "bpm_target": "125–145"
+            },
+            {
+              "phase": "Cool-down",
+              "duration_min": 2,
+              "description": "Full stop.",
+              "bpm_target": "<100"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

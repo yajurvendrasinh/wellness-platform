@@ -1,0 +1,171 @@
+{
+  "_meta": {
+    "sources": [
+      "Pursuit: Mobility — Jason & Lauren Pak (2023)",
+      "Mobility Man — Al Kavadlo (2023)"
+    ],
+    "structure": "level → duration_min → { meta, variants: [A, B, C] }",
+    "levels": ["beginner", "intermediate", "expert"],
+    "durations_min": [5, 10, 20],
+    "total_combinations": 9,
+    "variants_per_combination": 3,
+    "timing_note": "Mobility sessions are measured differently from workouts. 5 min = 2–3 drills."
+  },
+  "beginner": {
+    "5": {
+      "meta": { "level": "Beginner", "duration_min": 5 },
+      "variants": [
+        {
+          "id": "bgn_mob_5_A",
+          "variant": "A",
+          "title": "Lower Body Foundation — Hip & Squat",
+          "drills": [
+            { "name": "Kneeling Spiderman Rock", "duration": "45s /side", "instruction": "Half-keeling with front foot wide. Lean into front knee, shifting weight forward. Rock gently." },
+            { "name": "Kneeling Adductor Cossack Rock", "duration": "45s /side", "instruction": "Kneel wide, forearms on ground. Rock hips side to side slowly. No bouncing." },
+            { "name": "Supported Squat Prying", "duration": "60s total", "instruction": "Hold support, sit in deep squat. Use elbows to pry knees outward." }
+          ]
+        }
+      ]
+    },
+    "10": {
+      "meta": { "level": "Beginner", "duration_min": 10 },
+      "variants": [
+        {
+          "id": "bgn_mob_10_A",
+          "variant": "A",
+          "title": "Lower Body — Hip Hinge & Rotation",
+          "drills": [
+            { "name": "Supine Belly Breath", "duration": "60s", "instruction": "Breathe deeply into belly for 4s inhale, 4s exhale." },
+            { "name": "Hooklying Hip Internal Rotation", "duration": "60s", "instruction": "Lie on back, feet wide, knees falling inward toward each other." },
+            { "name": "Rocking Hip Flexor Mobilization", "duration": "45s /side", "instruction": "Half kneeling. Squeeze back glute hard. Rock forward into stretch." },
+            { "name": "Supine Knee Extension", "duration": "45s /side", "instruction": "Lie on back, hug knee, try to extend leg toward ceiling." },
+            { "name": "Reclining Pigeon", "duration": "60s /side", "instruction": "Figure four on back. Pull shin toward torso. Back flat." }
+          ]
+        }
+      ]
+    },
+    "20": {
+      "meta": { "level": "Beginner", "duration_min": 20 },
+      "variants": [
+        {
+          "id": "bgn_mob_20_A",
+          "variant": "A",
+          "title": "Full Body Routine A + B",
+          "drills": [
+            { "name": "Supine Belly Breath", "duration": "60s", "instruction": "6-8 cycles of deep nasal belly breathing." },
+            { "name": "Single & Double Knee Hugs", "duration": "90s", "instruction": "Hug knee to armpit one at a time, then both to chest." },
+            { "name": "Reclining Pigeon", "duration": "45s /side", "instruction": "Figure four on back. Breathe into the outer hip/glute." },
+            { "name": "Cobra to Child's Pose", "duration": "60s", "instruction": "Flow between spinal extension (cobra) and flexion (child's pose)." },
+            { "name": "Dynamic Standing Sequence", "duration": "90s", "instruction": "Arm circles and 'helicopter' passive arm swings." },
+            { "name": "Overhead Reach to Toe Touch", "duration": "60s", "instruction": "Dynamic reps: reach high, fold from hips, touch toes." }
+          ]
+        }
+      ]
+    }
+  },
+  "intermediate": {
+    "5": {
+      "meta": { "level": "Intermediate", "duration_min": 5 },
+      "variants": [
+        {
+          "id": "int_mob_5_A",
+          "variant": "A",
+          "title": "Lower Body — Hip & Hinge",
+          "drills": [
+            { "name": "90/90 Hip Switch", "duration": "60s", "instruction": "Seated shin box. Transition knees side to side with tall torso." },
+            { "name": "Rear Foot Elevated Quad Stretch", "duration": "45s /side", "instruction": "Half kneeling, back foot on bench. Squeeze glute, tuck tailbone." },
+            { "name": "Staggered Stance Hinge", "duration": "45s /side", "instruction": "Flat back hinge from staggered stance. Load the forward hamstring." }
+          ]
+        }
+      ]
+    },
+    "10": {
+      "meta": { "level": "Intermediate", "duration_min": 10 },
+      "variants": [
+        {
+          "id": "int_mob_10_B",
+          "variant": "B",
+          "title": "Upper Body — Shoulders & T-Spine",
+          "drills": [
+            { "name": "Tall Heel Sit Neck Rolls", "duration": "60s", "instruction": "Sit on heels, hands on head. Move head slowly, hands rest (no push)." },
+            { "name": "Half Kneeling Bow & Arrow", "duration": "30s /side", "instruction": "Half kneel. Draw top hand back like pulling a bowstring. Rotate spine." },
+            { "name": "Heel Sit Overhead Reach", "duration": "60s", "instruction": "Reach high, biceps to ears. Actively pull down, squeezing lats." },
+            { "name": "Seated Shoulder Butterflies", "duration": "60s", "instruction": "Hands on shoulders, draw largest possible circles with elbows." },
+            { "name": "Seated Wall Slide", "duration": "60s", "instruction": "Back against wall. Slide arms up in 'W' to 'Y' shape. Keep wall contact." }
+          ]
+        }
+      ]
+    },
+    "20": {
+      "meta": { "level": "Intermediate", "duration_min": 20 },
+      "variants": [
+        {
+          "id": "int_mob_20_B",
+          "variant": "B",
+          "title": "Standing Dynamic Sequence",
+          "drills": [
+            { "name": "Standing Belly Breath", "duration": "60s", "instruction": "Full nasal inhale into abdomen. Engage core lightly." },
+            { "name": "Large Arm Circles", "duration": "60s", "instruction": "Arms wide, circle from shoulder in both directions." },
+            { "name": "Helicopter passive swings", "duration": "60s", "instruction": "Twist from ankles/hips, letting arms swing and slap torso." },
+            { "name": "Dynamic Front Kick", "duration": "60s", "instruction": "Kick leg straight, reach opposite hand to toes. Hamstring focus." },
+            { "name": "Standing Side Leg Raise", "duration": "60s", "instruction": "Swing leg inward across body, then raise outward high as possible." },
+            { "name": "Hip CARs", "duration": "60s", "instruction": "Single leg balance. Large controlled hip circles." },
+            { "name": "Reach to Toe Touch", "duration": "60s", "instruction": "Maximize reach, bend from hips, pause at bottom." }
+          ]
+        }
+      ]
+    }
+  },
+  "expert": {
+    "5": {
+      "meta": { "level": "Expert", "duration_min": 5 },
+      "variants": [
+        {
+          "id": "exp_mob_5_A",
+          "variant": "A",
+          "title": "Lower Body — CARs & Cossack",
+          "drills": [
+            { "name": "Advanced Hip CARs", "duration": "90s /side", "instruction": "Standing hip circles with maximum muscular tension throughout." },
+            { "name": "Full Cossack Squats", "duration": "2 min", "instruction": "Deep lateral squat. One leg straight, toes up. Alternate sides low." }
+          ]
+        }
+      ]
+    },
+    "10": {
+      "meta": { "level": "Expert", "duration_min": 10 },
+      "variants": [
+        {
+          "id": "exp_mob_10_A",
+          "variant": "A",
+          "title": "Lower Body Expert Protocol",
+          "drills": [
+            { "name": "Alternate Nostril Breathing", "duration": "60s", "instruction": "Inhale one side, switch, exhale. Maximize parasympathetic shift." },
+            { "name": "Shin Box Transitions", "duration": "60s", "instruction": "90/90 side switches with no hand support. Maximize control." },
+            { "name": "Shin on Wall + T-Spine", "duration": "45s /side", "instruction": "Deepest quad stretch with knee at wall and torso rotation." },
+            { "name": "Jefferson Curl (Loaded)", "duration": "60s", "instruction": "Hold light weight. Roll down vertebra by vertebra. Hang at bottom." },
+            { "name": "Max Tension Hip CARs", "duration": "90s", "instruction": "Slow, high-tension hip circles to consolidate range." }
+          ]
+        }
+      ]
+    },
+    "20": {
+      "meta": { "level": "Expert", "duration_min": 20 },
+      "variants": [
+        {
+          "id": "exp_mob_20_C",
+          "variant": "C",
+          "title": "Expert Multi-Modality Protocol",
+          "drills": [
+            { "name": "Standing Back & Forward Bends", "duration": "2 min", "instruction": "Full spine extension followed by deep chest-to-thigh fold." },
+            { "name": "Down Dog to Up Dog Flow", "duration": "2 min", "instruction": "Inhale to cobra/up-dog, exhale to down-dog. Hold 3 cycles each." },
+            { "name": "Kneeling Lunge + Foot Grab", "duration": "90s /side", "instruction": "Deep lunge, grab back foot. Ultimate quad/flexor opening." },
+            { "name": "Lateral Squat Windmill", "duration": "2 min", "instruction": "Hold lateral squat. Weight overhead, reach free hand to floor." },
+            { "name": "Straight & German Hangs", "duration": "60s", "instruction": "Passive hang from bar. If ready, skin the cat to German hang." },
+            { "name": "SL Deadlift with Reach", "duration": "2 min", "instruction": "SL RDL pattern reaching one arm low and other to ceiling." },
+            { "name": "Squat ISO Elbow Pry", "duration": "60s", "instruction": "Deepest hold, prying knees wide rhythmically with exhale." }
+          ]
+        }
+      ]
+    }
+  }
+}
