@@ -111,10 +111,6 @@ const Navbar = ({
           className="gradient-btn text-white font-alata text-sm px-6 py-2.5 rounded-lg hover:opacity-90 transition-all flex items-center gap-2 group"
         >
           {label}
-          <ArrowRight
-            size={16}
-            className="group-hover:translate-x-1 transition-transform"
-          />
         </button>
       </div>
     </nav>
@@ -490,9 +486,9 @@ const TDEECalculator = () => {
                 <button
                   key={s}
                   onClick={() => handleChange("sex", s as Sex)}
-                  className={`flex-1 py-4 text-center rounded-xl transition-all border-none font-medium capitalize ${
+                  className={`flex-1 py-4 text-center rounded-xl transition-all border-none font-bold capitalize ${
                     inputs.sex === s
-                      ? "bg-primary-fixed text-primary ring-2 ring-outline-variant/30"
+                      ? "bg-primary text-white shadow-[0_8px_16px_rgba(102,76,45,0.15)] scale-[1.02]"
                       : "bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest"
                   }`}
                 >
@@ -634,10 +630,6 @@ const TDEECalculator = () => {
               className="flex-[2] gradient-btn text-white font-alata text-lg tracking-wide py-5 rounded-xl hover:opacity-90 disabled:opacity-40 disabled:cursor-not-allowed transition-all flex items-center justify-center gap-2 group"
             >
               Calculate Expenditure
-              <ArrowRight
-                size={18}
-                className="group-hover:translate-x-1 transition-transform"
-              />
             </button>
             <button
               onClick={handleReset}
@@ -782,10 +774,6 @@ const WorkoutBuilder = () => {
             className="gradient-btn text-white font-alata text-lg px-12 py-5 rounded-xl hover:opacity-90 disabled:opacity-40 disabled:cursor-not-allowed transition-all shadow-[0_10px_20px_rgba(102,76,45,0.15)] flex items-center gap-3 group"
           >
             Build My Workout
-            <ArrowRight
-              size={20}
-              className="group-hover:translate-x-1 transition-transform"
-            />
           </button>
         </div>
       </section>
